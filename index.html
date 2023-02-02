@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <title>Alie Pratama</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-mobile">
+            <ul>
+                <li id="logo" onclick="keBeranda()"><span>Alie</span> Pratama.</li>
+                <li hide-desktop>
+                    <div class="button-round-menu" onclick="toogleDropdown()">
+                        <div class="icon-menu"></div>
+                    </div>
+                </li>
+                <li onclick="keAtas()" hide-mobile hide-tablet>Beranda</li>
+                <li onclick="keSkill()" hide-mobile hide-tablet>Kemampuan</li>
+                <li onclick="keKontak()" hide-mobile hide-tablet>Kontak</li>
+            </ul>
+        </nav>
+        <div class="nav-dropdown-container" hide-desktop>
+            <ul class="nav-dropdown-list" id="nav-dropdown-list">
+                <li onclick="toogleDropdown();keAtas()">Beranda</li>
+                <li onclick="toogleDropdown();keSkill()">Kemampuan</li>
+                <li onclick="toogleDropdown();keKontak()">Kontak</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <article class="article-first">
+                <h4>Halo, perkenalkan saya</h4>
+                <div class="article-first-image" hide-tablet hide-desktop></div>
+                <h2>Muhammad <span>Ali<br>Pratama</span> Putra</h2>
+                <p>Saya seorang mahasiswa dari <strong>Universitas Teknologi
+                    Yogyakarta</strong> Fakultas Sains & Teknologi Prodi <strong>Informatika</strong>
+                    angkatan 2022. Saya adalah orang yang semangat belajar
+                    dan <strong>senang berkarya melalui teknologi</strong>.
+                </p>
+            </article>
+            <aside hide-mobile>
+                <div class="article-first-image"></div>
+            </aside>
+        </div>
+        <div id="skill">
+            <article class="article-second">
+                <h2>Kemampuan</h2>
+                <div class="skill-container">
+                    <div>
+                        <div>
+                            <div>
+                                <div class="progress-icon-1"></div>
+                                <label>HTML</label>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div class="progress-icon-2"></div>
+                                <label>CSS</label>
+                            </div>
+                            <span>92%</span>
+                        </div>
+                        <progress value="92" max="100"></progress>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div class="progress-icon-3"></div>
+                                <label>Javascript</label>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div class="progress-icon-4"></div>
+                                <label>Python</label>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div class="progress-icon-5"></div>
+                                <label>mySQL</label>
+                            </div>
+                            <span>40%</span>
+                        </div>
+                        <progress value="40" max="100"></progress>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer id="kontak">
+        <h2>Mari berkenalan <br><span>lebih dekat!</span></h2>
+        <ul>
+            <li class="footer-icon-ig" onclick="keIg()"></li>
+            <li class="footer-icon-gm" onclick="keMail()"></li>
+            <li class="footer-icon-gt" onclick="keGithub()"></li>
+            <li class="footer-icon-drb" onclick="keDribble()"></li>
+        </ul>
+    </footer>
+    <div id="credit">
+        <p>Alie Pratama | <span>2023</span></p>
+    </div>
+    <div style="width: 100%; height: 10vh;"></div>
+</body>
+</html>
