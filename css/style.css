@@ -51,7 +51,10 @@ header #logo>span{
 header div[class=button-round-menu]{
     background-color: var(--warna-primary);
     width: 2rem;
-    aspect-ratio: 1;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     padding: 0.5rem;
     transition: var(--transisi);
@@ -60,13 +63,10 @@ header div[class=button-round-menu]:hover{
     background-color: black;
     cursor: pointer;
 }
-header div[class=icon-menu]{
+header img[class=icon-menu]{
     width: 100%;
+    height: auto;
     aspect-ratio: 1;
-    background-image: url(../images/i_menu.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 header div[class=nav-dropdown-container]{
     width: 100%;
@@ -115,13 +115,10 @@ main article[class=article-first]{
     display: flex;
     flex-direction: column;
 }
-main article[class=article-first]>div[class=article-first-image]{
+main article[class=article-first]>img[class=article-first-image]{
     width: 50%;
     aspect-ratio: 3/4;
-    background-image: url(../images/f_bio_2x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: contain;
 }
 main article[class=article-first]>h4{
     font-weight: 500;
@@ -139,13 +136,10 @@ main aside{
     width: 100%;
     height: auto;
 }
-main aside div[class=article-first-image]{
+main aside img[class=article-first-image]{
     width: 100%;
     aspect-ratio: 3/4;
-    background-image: url(../images/f_bio_3x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: contain;
 }
 #skill{
     margin-top: 10vh;
@@ -336,11 +330,13 @@ footer ul .footer-icon-drb{
     footer{
         margin-top: 15vh;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        padding: var(--gutter-x);
+        padding: var(--gutter-desktop-x);
     }
     footer h2{
+        width: 70%;
         text-align: left;
         font-size: 250%;
     }
@@ -367,7 +363,7 @@ footer ul .footer-icon-drb{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
     main article[class=article-first]{
         height: 25vh;
@@ -401,11 +397,13 @@ footer ul .footer-icon-drb{
     footer{
         margin-top: 10vh;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        padding: var(--gutter-x);
+        padding: var(--gutter-desktop-x);
     }
     footer h2{
+        width: 50%;
         text-align: left;
         font-size: 200%;
     }
